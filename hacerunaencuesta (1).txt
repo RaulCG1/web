@@ -1,0 +1,110 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Encuesta
+  </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Encuesta</h1>
+  <p id="description">Favor de llenar esta encuesta</p>
+
+  <form id="survey-form">
+
+    <fieldset>
+      <label id="name-label">Ingresa tu nombre: <input id="name" type="text" required placeholder="Nombre"></label>
+      <label id="email-label">Ingresa tu email: <input id="email" type="email" required placeholder="Email"></label>
+      <label id="number-label">Ingresa tu edad: <input min="13" max="120" id="number" type="number" required placeholder="Edad"></label>
+<label>Ingrese su sexo
+<select id="dropdown">
+  <option>Masculino</option>
+  <option>Femenino</option>
+  </select></label>
+
+<label>Saber programar?</label><label for="ot1"><input class="inline" id="ot1" name="a" value="1" type="radio">Si</label>
+<label for="ot2"><input class="inline" id="ot2" name="a" value="2" type="radio">No</label>
+<label>Selecciona los lenguajes que conozca</label>
+<label>
+<input class="inline" name="a1" value="1" type="checkbox">Python
+</label>
+<label>
+<input class="inline" name="a1" value="2" type="checkbox">Java
+</label>
+<textarea placeholder="Escribe que quieres aprender"></textarea>
+    </fieldset>
+    <input id="submit" type="submit">
+  </form>
+  
+  
+</body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+label{
+  display:block;
+}
+textarea,checkbox,radio,select,input{
+  text-align:center;
+  display:block;
+  padding:1em;
+  margin: 10 0.5em 10 0;
+  width: 100%;
+  
+
+}
+
+body{
+  background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-nNtbnmU5mTJOv5QP3_s7QDwmPMu_82hC_w&usqp=CAU);
+}
+
+fieldset{
+  width: 10vw;
+  max-width: 500px;
+  min-width: 400px;
+  text-align:center;
+  margin: 10 auto;
+color:white;
+background: rgb(6,3,64);
+background: linear-gradient(180deg, rgba(6,3,64,1) 53%, rgba(14,14,170,1) 100%, rgba(16,81,94,1) 100%);
+}
+
+h1,p{
+  color:white;
+}
+h1,p{
+  text-align:center;
+}
+
+input[type="submit"]{
+  padding: 1px 2px;
+  width: 30%;
+  margin: 2em auto;
+  background:rgb(6,3,64);
+  background: linear-gradient(180deg, rgba(6,3,64,1) 53%, rgba(14,14,170,1) 100%, rgba(16,81,94,1) 100%);
+  color:white;
+}
+
+.inline {
+  width: unset;
+  margin: 2 .5em -15 12em;
+}
+
+placeholder{
+  color:blue;
+}
+
+textarea{
+  height:100px;
+  
+}
+
+** end of undefined **
+
