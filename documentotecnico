@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+    <title>Java</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>Informacion Java</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduccion">Introduccion</a></li>
+          <li><a class="nav-link" href="#Objetos_y_clases">Objetos y clases</a></li>
+          <li><a class="nav-link" href="#Campos,_métodos_y_constructores">Campos, métodos y constructores</a></li>
+          <li><a class="nav-link" href="#Herencia_y_polimorfismo">Herencia y polimorfismo</a></li>
+          <li><a class="nav-link" href="#Clases_abstractas_e_interfaces">Clases abstractas e interfaces</a></li>
+    <li ><a class="nav-link" href="#Componentes_de_un_programa_Java">Componentes de un programa Java</a>
+        </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduccion">
+      <header>Introduccion</header>
+      <p>Java es un lenguaje de programación creado por Sun Microsystems para poder funcionar en distintos tipos de
+        procesadores. Su sintaxis es muy parecida a la de C o C++, e incorpora como propias algunas características
+        que en otros lenguajes son extensiones: gestión de hilos, ejecución remota, etc.</p>
+    <p>
+        El código Java, una vez compilado, puede llevarse sin modificación alguna sobre cualquier máquina, y
+        ejecutarlo. Esto se debe a que el código se ejecuta sobre una máquina hipotética o virtual, la Java Virtual
+        Machine, que se encarga de interpretar el código (ficheros compilados .class) y convertirlo a código
+        particular de la CPU que se esté utilizando (siempre que se soporte dicha máquina virtual).
+    </p>
+    <p>
+        Cuando se programa con Java, se dispone de antemano de un conjunto de clases ya implementadas. Estas clases
+        (aparte de las que pueda hacer el usuario) forman parte del propio lenguaje (lo que se conoce como API
+        (Application Programming Interface) de Java).</p>
+    </section>
+
+
+
+    <section class="main-section" id="Objetos_y_clases">
+      <header>Objetos y clases</header>
+      <ul>
+        <li><b>Objeto:</b> conjunto de variables junto con los métodos relacionados con éstas. Contiene la información
+          (las variables) y la forma de manipular la información (los métodos). </li>
+        <li><b>Clase:</b> prototipo que define las variables y métodos que va a emplear un determinado tipo de objeto.
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="main-section" id="Campos,_métodos_y_constructores">
+      <header>Campos, métodos y constructores</header>
+      <ul>
+        <li><b>Campos:</b> contienen la información relativa a la clase</li>
+        <li><b>Métodos:</b> permiten manipular dicha información.</li>
+        <li><b>Constructores:</b> reservan memoria para almacenar un objeto de esa clase.</li>
+      </ul>
+
+
+    </section>
+
+    <section class="main-section" id="Herencia_y_polimorfismo">
+      <header>Herencia y polimorfismo</header>
+      <p>Con la <b>herencia</b> podemos definir una clase a partir de otra que ya exista, de forma que la nueva clase
+        tendrá todas las variables y métodos de la clase a partir de la que se crea, más las variables y métodos nuevos
+        que necesite. A la clase base a partir de la cual se crea la nueva clase se le llama superclase.</p>
+      <p>Por ejemplo, tenemos una clase genérica Animal, y heredamos de ella para formar clases más específicas, como
+        Pato , Elefante, o León. Si tenemos por ejemplo el método dibuja(Animal a), podremos pasarle a este método como
+        parámetro tanto un Animal como un Pato, Elefante, etc. Esto se conoce como <b>polimorfismo</b>.</p>
+    </section>
+
+    <section class="main-section" id="Clases_abstractas_e_interfaces">
+      <header>Clases abstractas e interfaces</header>
+      <p>
+        Mediante las clases abstractas y los interfaces podemos definir el esqueleto de una familia de clases, de forma
+        que los subtipos de la clase abstracta o la interfaz implementen ese esqueleto para dicho subtipo concreto. Por
+        ejemplo, podemos definir en la clase Animal el método dibuja() y el método imprime(), y que Animal sea una clase
+        abstracta o un interfaz.
+      </p>
+    </section>
+
+
+    <section class="main-section" id="Componentes_de_un_programa_Java">
+      <header>Componentes de un programa Java</header>
+      <p>En un programa Java podemos distinguir varios elementos:
+      </p>
+
+      <p>
+        Paquetes: equivalentes a los "include" de C, permiten utilizar clases en otras, y llamarlas de forma abreviada:
+      </p>
+
+      <code>import java.util.*;</code>
+
+      <p>
+        Campos: Constantes, variables y en general elementos de información.
+        </p>
+
+        <code>public int a;
+          Vector v;</code>
+ 
+        <p>
+          Métodos: Para las funciones que devuelvan algún tipo de valor, es imprescindible colocar una sentencia return en la función.
+        </p>
+
+        <code>public void imprimirA()
+public void insertarVector(String cadena)</code>
+
+        <p>
+        Constructores: Un tipo de método que siempre tiene el mismo nombre que la clase. Se pueden definir uno o varios. 
+        </p>
+        <code>public int a;
+          Vector v;</code>
+
+
+        <p>
+          Herencia: Se utiliza la palabra extends para decir de qué clase se hereda. Para hacer que Pato herede de Animal:
+        </p>
+        <code>class Pato extends Animal</code>
+
+        <p>
+          this se usa para hacer referencia a los miembros de la propia clase. Se utiliza cuando hay otros elementos con el mismo nombre, para distinguir :
+        </p>
+        <code>public class MiClase {
+   int i;
+   public MiClase (int i) {
+       this.i = i; 	// i de la clase = parametro i
+   }
+}</code>
+    </section>
+  </main>
+</body>
+
+</html>
